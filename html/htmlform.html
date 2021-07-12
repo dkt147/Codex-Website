@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Collapsible sidebar using Bootstrap 4</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="style5.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
+</head>
+
+<style >
+    body{
+        font-family:courier,arial,helvetica;
+    }
+</style>
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar Holder -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>Codex  <img src="pngwave.png" width="25px" height="25px"></h3>
+            </div>
+
+            <ul class="list-unstyled components">
+                <p>HTML Code</p>
+                <li class="active">
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">HTML Basic</a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li>
+                            <a href="htmlint.html">Html Introduction</a>
+                        </li>
+                        <li>
+                            <a href="htmledit.html">Html Editors</a>
+                        </li>
+                        <li>
+                            <a href="htmlbasic.html">Html Basic</a>
+                        </li>
+                        <li>
+                            <a href="htmlelem.html">Html Elements</a>
+                        </li>
+                        <li>
+                            <a href="htmlatt.html">Html Attributes</a>
+                        </li>
+                        <li>
+                            <a href="htmlhead.html">Html Headings</a>
+                        </li>
+                        <li>
+                            <a href="htmpara.html">Html Paragraphs</a>
+                        </li>
+                        <li>
+                            <a href="htmlstyle.html">Html Styles</a>
+                        </li>
+                        <li>
+                            <a href="htmlformat.html">Html Formatting</a>
+                        </li>
+                        <li>
+                            <a href="htmlquote.html">Html Quotations</a>
+                        </li>
+                        <li>
+                            <a href="htmlcom.html">Html Comments</a>
+                        </li>
+                        <li>
+                            <a href="htmlcolor.html">Html Colors</a>
+                        </li>
+                        <li>
+                            <a href="htmllink.html">Html Links</a>
+                        </li>
+                        <li>
+                            <a href="htmlimg.html">Html Images</a>
+                        </li>
+                        <li>
+                            <a href="htmltbl.html">Html Tables</a>
+                        </li>
+                        <li>
+                            <a href="htmllist.html">Html Lists</a>
+                        </li>
+                        <li>
+                            <a href="htmlblock.html">Html Block & Inline</a>
+                        </li>
+                        <li>
+                            <a href="htmlclasses.html">Html Classes</a>
+                        </li>
+                        <li>
+                            <a href="htmlid.html">Html Id</a>
+                        </li>
+                        <li>
+                            <a href="htmliframe.html">Html Iframes</a>
+                        </li>
+                    <li>
+                            <a href="htmlfile.html">Html File Paths</a>
+                        </li>
+                        <li>
+                            <a href="htmlhead.html">Html Head</a>
+                        </li>
+                    <li>
+                            <a href="htmllayout.html">Html Layout</a>
+                        </li>
+                        
+                    </ul>
+                </li>
+                <li>
+                
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">HTML Forms</a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="htmlform.html">Html Forms</a>
+                        </li>
+                        <li>
+                            <a href="htmlelem.html">Html Elements</a>
+                        </li>
+                        <li>
+                            <a href="htmltype.html">Html Types</a>
+                        </li>
+                         <li>
+                            <a href="htmlatt.html">Html Attributes</a>
+                        </li>
+                        <li>
+                            <a href="htmlformatt.html">Html Form Attributes</a>
+                        </li>
+                        
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="htmlmedia.html">HTML Media</a>
+                </li>
+                <li>
+                    <a href="htmlgraphic.html">HTML Graphics</a>
+                </li>
+                <li>
+                    <a href="htmlex.html">HTML Exercise</a>
+                </li>
+            </ul>
+
+           
+        </nav>
+ <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="navbar-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="..\index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="..\code.html">Code</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="..\tutorial.html">Tutorial</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="..\exercise.html">Exercise</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="..\contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            
+        <!-- Page Content Holder -->
+        <div class="row">
+  <div class="col-2"></div>
+  <div class="col-8"><h1 style="background-color: white; color: black;"><b>
+  <a href="" class="typewrite" data-period="2000" data-type='[ "HTML Code...", "HTML Source...", "Build Now..." ]'>
+    
+  </a></b>
+</h1>
+<div style="background-color: skyblue; border-radius: 5px 5px;padding-left: 5px; padding-right: 5px; border: 1px solid white;"><br>An HTML form is used to collect user input. The user input is most often sent to a server for processing.<br><br>
+<button class="btn btn-success" style="width: 25;height: 10; margin-left: auto ;
+  margin-right: auto ;">Next</button>
+</div>
+</div>
+  <div class="col-2"></div>
+</div>
+
+            <div class="line"></div>
+
+              <div class="row">
+  <div class="col-2"></div>
+  <div class="col-8"><b><h2>The <<span style="color: black;">form</span>> Element:</b></h2>
+<p>The HTML <span style="color: #ff0066;"><</span><span style="color: #ff0066;">form</span><span style="color: #ff0066;">></span> element is used to create an HTML form for user input:</p>
+
+<div style="border: 3px solid white;border-left-color: skyblue; padding-left: 5px;background-color: white;">
+ <<span style="color: purple;">form</span>><br>.
+<br>form elements<br>.<br>
+ <<span style="color: purple;">/form</span>> 
+<br>
+</div></div>
+  <div class="col-2"></div>
+</div>
+<br>
+              <div class="row">
+  <div class="col-2"></div>
+  <div class="col-8" ><p>The <<span style="color: #ff0066;">form</span> element is a container for different types of input elements, such as: text fields, checkboxes, radio buttons, submit buttons, etc.</p></div>
+  <div class="col-2"></div>
+</div>
+
+            <div class="line"></div>
+
+          <div class="row">
+  <div class="col-2"></div>
+  <div class="col-8"><h3><b>The <<span style="color: black;">input></span> Element</b></h3><br>
+<p>The HTML <<span style="color: #ff0066;">input</span>> element is the most used form element.<br>
+An <<span style="color: #ff0066;">input</span>> element can be displayed in many ways, depending on the type attribute.</p><br>
+<h3><b>Text Field</b></h3>
+<p>The <span style="color: #ff0066;"><</span><span style="color: #ff0066;">input type</span><span style="color: #ff0066;">="text"></span> defines a single-line input field for text input.</p>
+
+<b>Example:</b><br>
+<p>A form with two text input fields:</p>
+<div style="border: 3px solid white;border-left-color: skyblue; padding-left: 5px;background-color: white;">
+ <span  style="color: blue;"><</span><span style="color: brown;">form</span><span  style="color: blue;">></span><br>
+   &nbsp;&nbsp;&nbsp;<span style="color: blue;"><</span><span style="color: brown;">label</span> <span style="color: red;">for</span><span style="color: blue;">="fname"</span><span style="color: blue;">></span>First name:<span style="color: brown;">/label</span><span  style="color: blue;"><</span><span style="color: brown;">/br</span><span style="color: blue;">></span><br>
+
+   &nbsp;&nbsp;&nbsp;<span style="color: blue;"><</span><span style="color: brown;">input</span> <span style="color: red;">type</span><span style="color: blue;">="text"</span><span style="color: blue;">></span> <span style="color: red;">id</span><span  style="color: blue;">="fname"</span> <span style="color: red;">name</span><span style="color: blue;">="fname"</span><span style="color: blue;">></span><span style="color: blue;"><</span><span style="color: brown;">br</span><span style="color: blue;">></span><br>
+
+  &nbsp;&nbsp;&nbsp;<span style="color: blue;"><</span><span style="color: brown;">label</span> <span style="color: red;">for</span><span style="color: blue;">="lname"</span><span style="color: blue;">></span>Last name:<span style="color: brown;">/label</span><span  style="color: blue;"><</span><span style="color: brown;">/br</span><span style="color: blue;">></span><br>
+
+   &nbsp;&nbsp;&nbsp;<span style="color: blue;"><</span><span style="color: brown;">input</span> <span style="color: red;">type</span><span style="color: blue;">="text"</span><span style="color: blue;">></span> <span style="color: red;">id</span><span  style="color: blue;">="lname"</span> <span style="color: red;">name</span><span style="color: blue;">="lname"</span><span style="color: blue;">></span><span style="color: blue;"><</span><span style="color: brown;">br</span><span style="color: blue;">></span><br>
+ <span  style="color: blue;"><</span><span style="color: brown;">/form</span><span  style="color: blue;">></span><br>
+<br>
+</div></div>
+  <div class="col-2"></div>
+</div>
+<br><br>
+ <div class="row">
+  <div class="col-3"></div>
+  <div class="col-6">        <nav aria-label="...">
+  <ul class="pagination">
+    <li class="page-item disabled">
+      <span class="page-link">Previous</span>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item active">
+      <span class="page-link">
+        2
+        <span class="sr-only">(current)</span>
+      </span>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#">Next</a>
+    </li>
+  </ul>
+</nav></div>
+  <div class="col-3"></div>
+</div>
+
+
+
+        </div>
+
+    </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+                $(this).toggleClass('active');
+            });
+        });
+    </script>
+    <script type="text/javascript">
+  //made by vipul mirajkar thevipulm.appspot.com
+var TxtType = function(el, toRotate, period) {
+        this.toRotate = toRotate;
+        this.el = el;
+        this.loopNum = 0;
+        this.period = parseInt(period, 10) || 2000;
+        this.txt = '';
+        this.tick();
+        this.isDeleting = false;
+    };
+
+    TxtType.prototype.tick = function() {
+        var i = this.loopNum % this.toRotate.length;
+        var fullTxt = this.toRotate[i];
+
+        if (this.isDeleting) {
+        this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+        this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }
+
+        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+        var that = this;
+        var delta = 200 - Math.random() * 100;
+
+        if (this.isDeleting) { delta /= 2; }
+
+        if (!this.isDeleting && this.txt === fullTxt) {
+        delta = this.period;
+        this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === '') {
+        this.isDeleting = false;
+        this.loopNum++;
+        delta = 500;
+        }
+
+        setTimeout(function() {
+        that.tick();
+        }, delta);
+    };
+
+    window.onload = function() {
+        var elements = document.getElementsByClassName('typewrite');
+        for (var i=0; i<elements.length; i++) {
+            var toRotate = elements[i].getAttribute('data-type');
+            var period = elements[i].getAttribute('data-period');
+            if (toRotate) {
+              new TxtType(elements[i], JSON.parse(toRotate), period);
+            }
+        }
+        // INJECT CSS
+        var css = document.createElement("style");
+        css.type = "text/css";
+        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid black;}";
+        document.body.appendChild(css);
+    };
+
+</script>
+</body>
+
+</html>

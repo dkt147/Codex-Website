@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Codex | C# | Tutorial</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="type.css">
+  <link rel = "icon" href =  
+"pngwave.png" 
+        type = "image/x-icon">
+
+  <!-- Custom styles for this template -->
+  <link href="css/scrolling-nav.css" rel="stylesheet">
+   <link href="css/type.css" rel="stylesheet">
+   <link href="css/codeanimate.css" rel="stylesheet">
+
+</head>
+<style>
+  #nav
+  {
+    margin-top: 7px;  
+    display: flex;
+  }
+  .projects-wrapper {
+        max-width: 980px;
+        position: relative;
+        margin: 0 auto;
+        border: 0px solid pink;
+        border: 0px solid black;
+   
+    }
+
+    .proj-box-format {
+        float: left;
+        height: 200px;
+        width: 30%;
+        margin: 10px;
+        
+    }
+
+    iframe {
+        width: 100%;
+        height: 100%;
+       
+    }
+
+    .clearfix:before,
+    .clearfix:after {
+        content: " "; /* 1 */
+        display: table; /* 2 */
+    }
+    #footer{
+      padding-bottom: 0;
+    }
+header {
+  position: relative;
+  background-color: black;
+  height: 75vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+  position: relative;
+  z-index: 2;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+@media (pointer: coarse) and (hover: none) {
+  header {
+    background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+  }
+  header video {
+    display: none;
+  }
+}
+</style>
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav id="nav" class="navbar navbar-expand-lg navbar-light bg-white fixed-top" id="mainNav">
+    <div class="container">
+      <div style="margin-top: 5px; "><a class="navbar-brand js-scroll-trigger" href="#page-top"><b>Codex</b> <img src="pngwave.png" width="25px" height="25px"></a></div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <b>
+      
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="..\index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="..\code.html">Code</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="..\tutorial.html">Tutorial</a>
+          </li>
+                    <li class="nav-item">
+            <a class="nav-link " href="..\exercise.html">Exercise</a>
+          </li>
+                    <li class="nav-item">
+            <a class="nav-link " href="..\contact.html">Contact</a>
+          </li>
+        </ul>
+      </div></b>
+    </div>
+  </nav>
+<header>
+  <div class="overlay"></div>
+  <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+    <source src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4" type="video/mp4">
+  </video>
+  <div class="container h-100">
+    <div class="d-flex h-100 text-center align-items-center">
+      <div class="w-100 text-white">
+        <h1 class="display-3">Video Header</h1>
+        <p class="lead mb-0">With HTML5 Video and Bootstrap 4</p>
+      </div>
+    </div>
+  </div>
+</header>
+<hr><br>
+  
+  <div> 
+    <h2 class="text-center pad-section" style="font-family:all;">Java Tutorials</h2>
+    <br>  
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">        <iframe id="scaled-frame"  src="https://www.youtube.com/embed/RVZ6jqBaKWU" src="<%=video1[1]%>"frameborder="" webkitallowfullscreen mozallowfullscreen allowfullscreen align="middle" seamless></iframe></div>
+                <div class="col-md-4"><iframe src="https://www.youtube.com/embed/Dv_C9m75-Hw" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen align="middle" seamless></iframe>
+    </div>
+                        <div class="col-md-4"><iframe src="https://www.youtube.com/embed/4xgm-HZaEpU" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen align="middle" seamless></iframe></div>
+      </div><br>      <div class="row">
+        <div class="col-md-4">        <iframe src="https://www.youtube.com/embed/4xgm-HZaEpU" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen align="middle" seamless></iframe></div>
+                <div class="col-md-4"> <iframe src="https://www.youtube.com/embed/rHcCAsFMjh0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen align="middle" seamless></iframe></div>
+                        <div class="col-md-4"><iframe src="https://www.youtube.com/embed/GGxLkvR_z40" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen align="middle" seamless></iframe></div>
+      </div><br>
+
+            <div class="row">
+        <div class="col-md-4"> <iframe src="https://www.youtube.com/embed/ceyIuhR6ve8" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen align="middle" seamless></iframe></div>
+                <div class="col-md-4"> <iframe src="https://www.youtube.com/embed/ceyIuhR6ve8" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen align="middle" seamless></iframe></div>
+                        <div class="col-md-4"><iframe src="https://www.youtube.com/embed/DUJK9BPQJLk" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen align="middle" seamless></iframe></div>
+      </div><br>
+            <div class="row">
+        <div class="col-md-4">  <iframe src="https://www.youtube.com/embed/1ZSOKOdndBU" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen align="middle" seamless></iframe></div>
+                <div class="col-md-4"><iframe src="https://www.youtube.com/embed/u6mqgB61LNI" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen align="middle" seamless></iframe></div>
+                        <div class="col-md-4"><iframe src="https://www.youtube.com/embed/AlcVNsrlXy0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen align="middle" seamless></iframe></div>
+      </div>
+    </div>
+    
+     
+  
+    
+    
+  </div> <!-- ends projects section -->
+<br></div>
+  <!-- Footer -->
+  <footer id="footer" class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2020</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom JavaScript for this theme -->
+  <script src="js/scrolling-nav.js"></script>
+<script type="text/javascript">
+  //made by vipul mirajkar thevipulm.appspot.com
+var TxtType = function(el, toRotate, period) {
+        this.toRotate = toRotate;
+        this.el = el;
+        this.loopNum = 0;
+        this.period = parseInt(period, 10) || 2000;
+        this.txt = '';
+        this.tick();
+        this.isDeleting = false;
+    };
+
+    TxtType.prototype.tick = function() {
+        var i = this.loopNum % this.toRotate.length;
+        var fullTxt = this.toRotate[i];
+
+        if (this.isDeleting) {
+        this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+        this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }
+
+        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+        var that = this;
+        var delta = 200 - Math.random() * 100;
+
+        if (this.isDeleting) { delta /= 2; }
+
+        if (!this.isDeleting && this.txt === fullTxt) {
+        delta = this.period;
+        this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === '') {
+        this.isDeleting = false;
+        this.loopNum++;
+        delta = 500;
+        }
+
+        setTimeout(function() {
+        that.tick();
+        }, delta);
+    };
+
+    window.onload = function() {
+        var elements = document.getElementsByClassName('typewrite');
+        for (var i=0; i<elements.length; i++) {
+            var toRotate = elements[i].getAttribute('data-type');
+            var period = elements[i].getAttribute('data-period');
+            if (toRotate) {
+              new TxtType(elements[i], JSON.parse(toRotate), period);
+            }
+        }
+        // INJECT CSS
+        var css = document.createElement("style");
+        css.type = "text/css";
+        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+        document.body.appendChild(css);
+    };
+
+</script>
+</body>
+
+</html>

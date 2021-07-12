@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Codex | Css</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel = "icon" href =  
+"pngwave.png" 
+        type = "image/x-icon">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="style5.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
+</head>
+<style >
+    body{
+        font-family:courier,arial,helvetica;
+    }
+</style>
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar Holder -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>Codex  <img src="pngwave.png" width="25px" height="25px"></h3>
+            </div>
+
+            <ul class="list-unstyled components">
+                <p>CSS Code</p>
+                <li class="active">
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">CSS Basic</a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li>
+                            <a href="Cssint.html">Css Introduction</a>
+                        </li>
+                        <li>
+                            <a href="Csssyn.html">Css Syntax</a>
+                        </li>
+                        <li>
+                            <a href="Cssselector.html">Css Selectors</a>
+                        </li>
+                        <li>
+                            <a href="Csscolor.html">Css Color</a>
+                        </li>
+                        <li>
+                            <a href="Cssback.html">Css Background</a>
+                        </li>
+                        <li>
+                            <a href="Cssborder.html">Css Borders</a>
+                        </li>
+                        <li>
+                            <a href="Cssbox.html">Css Box Model</a>
+                        </li>
+                        <li>
+                            <a href="Csstxt.html">Css Text</a>
+                        </li>
+                        <li>
+                            <a href="Cssfont.html">Css Fonts</a>
+                        </li>
+                        <li>
+                            <a href="Cssicon.html">Css Icons</a>
+                        </li>
+                        <li>
+                            <a href="Csscom.html">Css Comments</a>
+                        </li>
+                        <li>
+                            <a href="Csslist.html">Css List</a>
+                        </li>
+                        <li>
+                            <a href="Csstbl.html">Css Tables</a>
+                        </li>
+                        <li>
+                            <a href="Cssdisp.html">Css Display</a>
+                        </li>
+                        <li>
+                            <a href="Cssnav.html">Css Navigation</a>
+                        </li>
+                        <li>
+                            <a href="Cssdrop.html">Css Dropdowns</a>
+                        </li>
+                        <li>
+                            <a href="Cssimg.html">Css Image</a>
+                        </li>
+                        <li>
+                            <a href="Cssform.html">Css Forms</a>
+                        </li>
+                        <li>
+                            <a href="Csscount.html">Css Counters</a>
+                        </li>
+                        
+                    </ul>
+                </li>
+                <li>
+                
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Css Advanced</a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="Cssgrad.html">Css Gradient</a>
+                        </li>
+                        <li>
+                            <a href="Csstxteff.html">Css Text Effect</a>
+                        </li>
+                        <li>
+                            <a href="Css2d.html">Css 2D transform</a>
+                        </li>
+                         <li>
+                            <a href="Css3d.html">Css 3D transform</a>
+                        </li>
+                        <li>
+                            <a href="Csstrans.html">Css Transition</a>
+                        </li>
+                         <li>
+                            <a href="CssAnimate.html">Css Animation</a>
+                        </li>
+                        <li>
+                            <a href="Csspaginate.html">Css Pagination</a>
+                        </li>
+                         
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="Cssresponsive.html">Css Responsive</a>
+                </li>
+                <li>
+                    <a href="Cssgrid.html">Css Grid System</a>
+                </li>
+                <li>
+                    <a href="Cssex.html">Css Exercise</a>
+                </li>
+            </ul>
+
+           
+        </nav>
+
+        <!-- Page Content Holder -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="navbar-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="..\index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="..\code.html">Code</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="..\tutorial.html">Tutorial</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="..\exercise.html">Exercise</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="..\contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            
+            <div class="row">
+  <div class="col-2"></div>
+  <div class="col-8"><h1 style="background-color: white; color: black;"><b>
+  <a href="" class="typewrite" data-period="2000" data-type='[ "Css Code...", "Css Source...", "Code Now..." ]'>
+    
+  </a></b>
+</h1>
+<div style="background-color: skyblue; border-radius: 5px 5px;padding-left: 5px; padding-right: 5px; border: 1px solid white;"><br><h1>CSS Animations</h1>
+    An animation lets an element gradually change from one style to another.
+<br>
+You can change as many CSS properties you want, as many times you want.
+<br>
+To use CSS animation, you must first specify some keyframes for the animation.
+<br>
+Keyframes hold what styles the element will have at certain times.
+<br>
+<button class="btn btn-success" style="width: 25;height: 10; margin-left: auto ;
+  margin-right: auto ;">Next</button>
+</div>
+</div>
+  <div class="col-2"></div>
+</div>
+
+            <div class="line"></div>
+            <div class="row">
+  <div class="col-2"></div>
+  <div class="col-8" ><h2><b>CSS Animatons</b></h2>
+    CSS allows animation of HTML elements without using JavaScript or Flash!<br><br>
+    In this chapter you will learn about the following properties:
+    <ul>
+        <li><span style="color: #ff0066;">@keyframes</span></li>
+        <li><span style="color: #ff0066;">animation-name</span></li>
+        <li><span style="color: #ff0066;">animation-duration</span></li>
+        <li><span style="color: #ff0066;">animation-delay</span></li>
+        <li><span style="color: #ff0066;">animation-iteration-count</span></li>
+        <li><span style="color: #ff0066;">animation-direction</span></li>
+        <li><span style="color: #ff0066;">animation-timing-function</span></li>
+        <li><span style="color: #ff0066;">animation-fill-mode</span></li>
+        <li><span style="color: #ff0066;">animation</span></li>
+    </ul></div>
+  <div class="col-2"></div>
+</div>
+
+<div class="line"></div>
+<div class="row">
+  <div class="col-2"></div>
+  <div class="col-8" ><h2><b>The @keyframes Rule</b></h2> When you specify CSS styles inside the <span style="color: #ff0066;">@keyframes</span> rule, the animation will gradually change from the current style to the new style at certain times.
+<br><br>
+To get an animation to work, you must bind the animation to an element.
+<br><br>
+The following example binds the "example" animation to the <<span style="color: #ff0066;">div</span>> element. The animation will last for 4 seconds, and it will gradually change the background-color of the <<span style="color: #ff0066;">div</span>> element from "red" to "yellow":.<br><b></div>
+  <div class="col-2"></div>
+</div>
+
+              <div class="row">
+  <div class="col-2"></div>
+  <div class="col-8"><b>Example</b><br>
+<br>
+
+<div style="border: 3px solid white;border-left-color: skyblue; padding-left: 5px;background-color: white;"><span style="color: green">/* The animation code */</span><br>
+ <span  style="color: brown;">@keyframes example</span> {<br>
+ &nbsp;&nbsp;<span style="color: brown;">from</span> {<span style="color: red;">background-color</span> : <span style="color: blue;">blue</span>;}<br>
+  &nbsp;&nbsp;<span style="color: brown;">to</span> {<span style="color: red;">background-color</span> : <span style="color: blue;">yellow</span>;}<br>
+<br><br>
+<span style="color: green">/* The element to apply the animation to */</span><br>
+<span  style="color: brown;">.div</span> {<br>
+ &nbsp;&nbsp;<span style="color: red;">width</span> : <span style="color: blue;">100px</span>;<br>
+ &nbsp;&nbsp;<span style="color: red;">height</span> : <span style="color: blue;">50px</span>;<br>
+ &nbsp;&nbsp;<span style="color: red;">background-color</span> : <span style="color: blue;">red</span>;<br>
+ &nbsp;&nbsp;<span style="color: red;">animation-color</span> : <span style="color: blue;">example</span>;<br>
+ &nbsp;&nbsp;<span style="color: red;">animation-duration</span> : <span style="color: blue;">50s</span>;<br>
+
+</div></div>
+  <div class="col-2"></div>
+</div>
+<div class="line"></div>
+
+          <div class="row">
+  <div class="col-2"></div>
+  <div class="col-8" style="background-color: white;"><b>Example</b><br><span style="color: green"> /* The animation code */</span><br>
+ <span  style="color: brown;">@keyframes example</span> {<br>
+ &nbsp;&nbsp;<span style="color: brown;">0%</span> {<span style="color: red;">background-color</span> : <span style="color: blue;">red</span>; <span style="color: red;">left</span> : <span style="color: blue;">0px</span>; <span style="color: red;">top</span> : <span style="color: blue;">0px</span>;}<br>
+  &nbsp;&nbsp;<span style="color: brown;">25%</span> {<span style="color: red;">background-color</span> : <span style="color: blue;">yellow</span>; <span style="color: red;">left</span> : <span style="color: blue;">200px</span>; <span style="color: red;">top</span> : <span style="color: blue;">0px;</span>; }<br>
+  &nbsp;&nbsp;<span style="color: brown;">50%</span> {<span style="color: red;">background-color</span> : <span style="color: blue;">green</span>; <span style="color: red;">left</span> : <span style="color: blue;">200px</span>; <span style="color: red;">top</span> : <span style="color: blue;">200px</span>;}<br>
+  &nbsp;&nbsp;<span style="color: brown;">75%</span> {<span style="color: red;">background-color</span> : <span style="color: blue;">blue</span>; <span style="color: red;">left</span> : <span style="color: blue;">0px</span>; <span style="color: red;">top</span> : <span style="color: blue;">200px</span>;}<br>
+  &nbsp;&nbsp;<span style="color: brown;">100%</span> {<span style="color: red;">background-color</span> : <span style="color: blue;">orange</span>; <span style="color: red;">left</span> : <span style="color: blue;">0px</span>; <span style="color: red;">top</span> : <span style="color: blue;">0px</span>;}<br>
+
+<br><br>
+<span style="color: green">/* The element to apply the animation to */</span><br>
+<span  style="color: brown;">.div</span> {<br>
+ &nbsp;&nbsp;<span style="color: red;">width</span> : <span style="color: blue;">100px</span>;<br>
+ &nbsp;&nbsp;<span style="color: red;">height</span> : <span style="color: blue;">50px</span>;<br>
+  &nbsp;&nbsp;<span style="color: red;">position</span> : <span style="color: blue;">relative</span>;<br>
+ &nbsp;&nbsp;<span style="color: red;">background-color</span> : <span style="color: blue;">red</span>;<br>
+ &nbsp;&nbsp;<span style="color: red;">animation-color</span> : <span style="color: blue;">example</span>;<br>
+ &nbsp;&nbsp;<span style="color: red;">animation-duration</span> : <span style="color: blue;">50s</span>;<br>
+<br></div>
+  <div class="col-2"></div>
+</div>
+
+<br><br>
+ <div class="row">
+  <div class="col-3"></div>
+  <div class="col-6">        <nav aria-label="...">
+  <ul class="pagination">
+    <li class="page-item disabled">
+      <span class="page-link">Previous</span>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item active">
+      <span class="page-link">
+        2
+        <span class="sr-only">(current)</span>
+      </span>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#">Next</a>
+    </li>
+  </ul>
+</nav></div>
+  <div class="col-3"></div>
+</div>
+
+
+
+        </div>
+
+    </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+                $(this).toggleClass('active');
+            });
+        });
+    </script>
+    <script type="text/javascript">
+  //made by vipul mirajkar thevipulm.appspot.com
+var TxtType = function(el, toRotate, period) {
+        this.toRotate = toRotate;
+        this.el = el;
+        this.loopNum = 0;
+        this.period = parseInt(period, 10) || 2000;
+        this.txt = '';
+        this.tick();
+        this.isDeleting = false;
+    };
+
+    TxtType.prototype.tick = function() {
+        var i = this.loopNum % this.toRotate.length;
+        var fullTxt = this.toRotate[i];
+
+        if (this.isDeleting) {
+        this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+        this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }
+
+        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+        var that = this;
+        var delta = 200 - Math.random() * 100;
+
+        if (this.isDeleting) { delta /= 2; }
+
+        if (!this.isDeleting && this.txt === fullTxt) {
+        delta = this.period;
+        this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === '') {
+        this.isDeleting = false;
+        this.loopNum++;
+        delta = 500;
+        }
+
+        setTimeout(function() {
+        that.tick();
+        }, delta);
+    };
+
+    window.onload = function() {
+        var elements = document.getElementsByClassName('typewrite');
+        for (var i=0; i<elements.length; i++) {
+            var toRotate = elements[i].getAttribute('data-type');
+            var period = elements[i].getAttribute('data-period');
+            if (toRotate) {
+              new TxtType(elements[i], JSON.parse(toRotate), period);
+            }
+        }
+        // INJECT CSS
+        var css = document.createElement("style");
+        css.type = "text/css";
+        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid black;}";
+        document.body.appendChild(css);
+    };
+
+</script>
+</body>
+
+</html>
